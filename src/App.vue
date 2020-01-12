@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <main-layout></main-layout>
   </div>
 </template>
@@ -13,3 +13,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+  .app {
+    height: 100vh;
+  }
+</style>

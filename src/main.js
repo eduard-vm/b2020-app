@@ -8,9 +8,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-// Install BootstrapVue
 Vue.use(BootstrapVue);
-// Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin);
 // import 'buefy/dist/buefy.css';
 // Vue.use(Buefy);
