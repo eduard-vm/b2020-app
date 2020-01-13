@@ -4,13 +4,20 @@
       <b-container>
         <h1>Boogie app</h1>
       </b-container>
+      <home-users />
     </b-container>
   </div>
 </template>
 
 <script>
+import HomeUsers from './components/HomeUsers.vue';
+
 export default {
   name: 'home-page',
+
+  components: {
+    HomeUsers,
+  },
 };
 </script>
 
