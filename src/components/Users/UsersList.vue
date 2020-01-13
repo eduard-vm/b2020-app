@@ -4,9 +4,7 @@
       v-for="(user, index) of users"
       :key="index"
       :user="user"
-    >
-      {{ user.name }}
-    </user-list-item>
+    />
   </b-list-group>
 </template>
 

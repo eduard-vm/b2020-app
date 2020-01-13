@@ -4,16 +4,16 @@ import Vue from 'vue';
 import * as types from './mutation-types';
 
 export default {
-  async getUsers({ commit }) {
+  async getPosts({ commit }) {
     commit('SET_LOADING', {
       all: true,
     });
 
     try {
-      const { data } = await Vue.$http.get('/users');
-      commit(types.SET_USERS, data);
+      const { data } = await Vue.$http.get('/posts');
+      commit(types.SET_POSTS, data);
     } catch (error) {
-      console.error('@getUsers error: ', error);
+      console.error('@getPosts error: ', error);
     } finally {
       commit('SET_LOADING', {
         all: false,

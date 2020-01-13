@@ -1,36 +1,36 @@
 <template>
   <b-container class="home-users">
-    <h2>Все пользователи</h2>
-    <users-list :users="users" />
+    <h2>Все посты</h2>
+    <posts-list :posts="posts" />
   </b-container>
 </template>
 
 <script>
 import { mapActions, mapState } from 'vuex';
-import UsersList from '../../../components/Users/UsersList.vue';
+import PostsList from '../../../components/Posts/PostsList.vue';
 
 export default {
   name: 'home-users',
 
   components: {
-    UsersList,
+    PostsList,
   },
 
   computed: {
     ...mapState({
-      users: ({ users }) => users.all,
-      loading: ({ users }) => users.loading.all,
+      posts: ({ posts }) => posts.all,
+      loading: ({ posts }) => posts.loading.all,
     }),
   },
 
   methods: {
     ...mapActions({
-      getUsers: 'users/getUsers',
+      getPosts: 'posts/getPosts',
     }),
   },
 
   created() {
-    this.getUsers();
+    this.getPosts();
   },
 };
 </script>

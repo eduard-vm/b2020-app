@@ -5,6 +5,7 @@
         <h1>Boogie app</h1>
       </b-container>
       <home-users />
+      <home-posts />
     </b-container>
   </div>
 </template>
@@ -17,6 +18,7 @@ export default {
 
   components: {
     HomeUsers: () => import('./components/HomeUsers.vue'),
+    HomePosts: () => import('./components/HomePosts.vue'),
   },
 };
 </script>
