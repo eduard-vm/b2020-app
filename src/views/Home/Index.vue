@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import HomeUsers from './components/HomeUsers.vue';
+// import HomeUsers from './components/HomeUsers.vue';
 
 export default {
   name: 'home-page',
 
   components: {
-    HomeUsers,
+    HomeUsers: () => import('./components/HomeUsers.vue'),
   },
 };
 </script>

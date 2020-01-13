@@ -1,4 +1,4 @@
-import { setLoading } from '../../common-mutations';
+import { SET_LOADING } from '../../common-mutations';
 import * as types from './mutation-types';
 
 export default {
@@ -10,5 +10,5 @@ export default {
     state.pagination = pagination;
   },
 
-  setLoading,
+  SET_LOADING,
 };

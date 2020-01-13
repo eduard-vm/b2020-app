@@ -50,7 +50,7 @@ const prepareUsersResponse = (data) => {
 
 export default {
   async getUsers({ commit }, params) {
-    commit('setLoading', {
+    commit('SET_LOADING', {
       all: true,
     });
 
@@ -64,7 +64,7 @@ export default {
     } catch (error) {
       console.error('@getUsers error: ', error);
     } finally {
-      commit('setLoading', {
+      commit('SET_LOADING', {
         all: false,
       });
     }
