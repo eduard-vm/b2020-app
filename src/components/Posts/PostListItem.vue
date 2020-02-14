@@ -15,9 +15,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  @import '~@/assets/scss/components/card';
+
   .post-card {
-    border-color:#f0f0f0;
-    padding: 30px;
+    @extend .card;
   }
 </style>

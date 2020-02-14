@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .header {
     min-height: 60px;
     background-color: #f0f0f0;

@@ -19,14 +19,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  @import '~@/assets/scss/components/card';
+
   .user-card {
-    // min-height: 320px;
-    border-color:#f0f0f0;
-    padding: 30px;
-    // box-sizing: border-box;
-    // margin-bottom: 20px;
-    // border-radius: 12px;
-    // box-shadow: 0 6px 12px rgba(black, .1);
+    @extend .card;
   }
 </style>
